@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Management System</title>
+    <link rel="shortcut icon" href="5.png" type="image/x-icon">
+    <link rel="stylesheet" href="pharmacy.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            PHARMACY MANAGEMENT SYSTEM
+        </div>
+
+        <!-- Medicine Information Form -->
+        <form id="medicine-info-form">
+            <div class="form-group">
+                <label for="refNo">Reference No:</label>
+                <input type="text" id="refNo" name="refNo" required>
+            </div>
+            <div class="form-group">
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" required>
+            </div>
+            <div class="form-group">
+                <label for="medicineType">Type of Medicine:</label>
+                <select id="medicineType" name="medicineType" required>
+                    <option value="Tablet">Tablet</option>
+                    <option value="Liquid">Liquid</option>
+                    <option value="Capsules">Capsules</option>
+                    <option value="Topical">Topical Medicines</option>
+                    <option value="Drops">Drops</option>
+                    <option value="Inhalers">Inhalers</option>
+                    <option value="Injection">Injection</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="medicineName">Medicine Name:</label>
+                <input type="text" id="medicineName" name="medicineName" required>
+            </div>
+            <div class="form-group">
+                <label for="lotNo">Lot No:</label>
+                <input type="text" id="lotNo" name="lotNo" required>
+            </div>
+            <div class="form-group">
+                <label for="issueDate">Issue Date:</label>
+                <input type="date" id="issueDate" name="issueDate" required>
+            </div>
+            <div class="form-group">
+                <label for="expDate">Exp Date:</label>
+                <input type="date" id="expDate" name="expDate" required>
+            </div>
+            <div class="form-group">
+                <label for="uses">Uses:</label>
+                <input type="text" id="uses" name="uses" required>
+            </div>
+            <div class="form-group">
+                <label for="dosage">Dosage:</label>
+                <input type="text" id="dosage" name="dosage" required>
+            </div>
+            <div class="form-group">
+                <label for="productQt">Product Quantity:</label>
+                <input type="number" id="productQt" name="productQt" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" required>
+            </div>
+        </form>
+
+        <!-- Button Section -->
+        <div class="button-group">
+            <button id="addData" onclick="addMedicine()">Add Medicine</button>
+            <button id="updateData" onclick="updateMedicine()">Update</button>
+            <button id="deleteData" onclick="deleteMedicine()">Delete</button>
+            <button id="resetData" onclick="resetForm()">Reset</button>
+            <button id="exitData" onclick="exitForm()">Exit</button>
+        </div>
+
+        <!-- Table Section -->
+        <div class="table-container">
+            <table id="medicineTable">
+                <thead>
+                    <tr>
+                        <th>Reference No</th>
+                        <th>Company Name</th>
+                        <th>Type of Medicine</th>
+                        <th>Medicine Name</th>
+                        <th>Lot No</th>
+                        <th>Issue Date</th>
+                        <th>Exp Date</th>
+                        <th>Uses</th>
+                        <th>Dosage</th>
+                        <th>Product Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Medicine data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Pharmacy Management System © 2024
+        </div>
+    </div>
+
+    <script src="pharmacy.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="patient.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Patient Registration Form</title>
+    <link rel="shortcut icon" href="5.png" type="image/x-icon">
+  </head>
+  <body>
+    <form action="save.php" method="POST">
+      <section class="container">
+        <header>Patient Admission Form</header>
+        <div class="form">
+          <div class="input-box">
+            <label>First Name</label>
+            <input type="text" placeholder="Enter first name" name="fname" required />
+          </div>
+
+          <div class="input-box">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter email address" name="email" required />
+          </div>
+
+          <div class="column">
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="Enter phone number" name="phonenumber" required />
+            </div>
+            <div class="input-box">
+              <label>Birth Date</label>
+              <input type="date" name="birthdate" required />
+            </div>
+          </div>
+
+          <div class="gender-box">
+            <h3>Gender</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="check-male" name="gender" value="Male" required />
+                <label for="check-Male">Male</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-female" name="gender" value="Female" required />
+                <label for="check-Female">Female</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-other" name="gender" value="Other" required />
+                <label for="check-other">Prefer not to say</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-box address">
+            <label>Address</label>
+            <input type="text" placeholder="Enter street address" name="address" required />
+            <input type="text" placeholder="Enter street address line 2" name="addressline2" />
+            <div class="column">
+              <div class="select-box">
+                <select name="country" required>
+                  <option hidden value="Not selected">Country</option>
+                  <option value="India">India</option>
+                  <option value="America">America</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Nepal">Nepal</option>
+                </select>
+              </div>
+              <input type="text" placeholder="Enter your city" name="city" required />
+            </div>
+            <div class="column">
+              <input type="text" placeholder="Enter your region (Asia)" name="region" required />
+              <input type="text" placeholder="Enter postal code" name="postalcode" required />
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="input-box">
+              <label>Department</label>
+              <div class="select-box">
+                <select name="department" required>
+                  <option hidden>Select Department</option>
+                  <option value="Anaesthesiology, Pain Medicine and Critical Care">Anaesthesiology, Pain Medicine and Critical Care</option>
+                  <option value="Cardiology">Cardiology</option>
+                  <option value="Dermatology & Venereology">Dermatology & Venereology</option>
+                  <option value="Paediatric Surgery">Paediatric Surgery</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label>Current Symptoms</label>
+            <input type="text" placeholder="Enter symptoms" name="currentsymptoms" required />
+          </div>
+
+          <div class="column">
+            <div class="input-box">
+              <label>Blood Group</label>
+              <input type="text" placeholder="Enter blood group" name="bloodgroup" required />
+            </div>
+          </div>
+
+          <button type="submit" name="submit">Submit</button>
+        </div>
+      </section>
+    </form>
+  </body>
+</html>

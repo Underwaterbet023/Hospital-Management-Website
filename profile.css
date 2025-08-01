@@ -1,0 +1,108 @@
+/* General body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Container section styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header section styling */
+header {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #4CAF50; /* Green color for header */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Card styling */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: #4CAF50; /* Green background for header */
+    color: white;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Card body styling */
+.card-body {
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Card detail styling */
+.card-body p {
+    margin: 10px 0;
+}
+
+.card-body strong {
+    color: #4CAF50;
+    font-weight: 600;
+}
+
+/* Button styling */
+button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+
+    header {
+        font-size: 2rem;
+    }
+}

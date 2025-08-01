@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form Section */
+#medicine-info-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0c58a4;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Button Section */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: auto;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addData {
+    background-color: #00b65b;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#updateData {
+    background-color: #007bff;
+    color: white;
+}
+
+#deleteData {
+    background-color: #dc3545;
+    color: white;
+    margin: auto;
+}
+
+#resetData {
+    background-color: #ffc107;
+    color: black;
+    margin: auto;
+}
+
+#exitData {
+    background-color: #6c757d;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    margin-left: 10px;
+}
+
+.button-group button:hover {
+    opacity: 0.9;
+}
+
+/* Table Section */
+.table-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, 
+.table-container td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-container th {
+    background-color: #004080;
+    color: white;
+    font-weight: bold;
+}
+
+.table-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #004080;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
