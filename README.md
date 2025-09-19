@@ -9,7 +9,9 @@
 > [ 🏥 Live Demo of my Website](https://underwaterbet023.github.io/Hospital-Management-Website/) 
 
 ---
+![image alt](https://github.com/Underwaterbet023/Hospital-Management-Website/blob/main/Screenshot%202025-09-19%20092742.png?raw=true)
 
+---
 ## 🧩 Features
 
 - ✅ **Patient Registration** – Simple sign-up for new patients
